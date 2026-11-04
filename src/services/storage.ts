@@ -1,7 +1,7 @@
 import { Preferences } from '@capacitor/preferences'
 import type { PlayerState } from '../types'
 
-const STORAGE_KEY = 'ascension-os.player.v1'
+const STORAGE_KEY = 'ascension-os.player.v2'
 
 export const loadPlayer = async (): Promise<PlayerState> => {
   try {
