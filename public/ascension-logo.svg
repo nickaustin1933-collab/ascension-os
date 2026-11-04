@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Ascension OS logo</title>
+  <path fill="#61e6ff" d="M64 5 119 35v58l-55 30L9 93V35L64 5Z"/>
+  <path fill="#07111d" d="M64 19 105 41v46l-41 22L23 87V41l41-22Z"/>
+  <path fill="#61e6ff" d="M64 32 37 89h12l6-14h18l6 14h12L64 32Zm0 22 5 11H59l5-11Z"/>
+  <path fill="#b9f5ff" d="M64 32 37 89h5l27-45-5-12Z" opacity=".55"/>
+</svg>
