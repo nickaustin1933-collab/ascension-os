@@ -11,12 +11,24 @@ export interface Quest {
   completed: boolean
 }
 
+export interface Habit {
+  id: string
+  title: string
+  cue: string
+  routine: string
+  reward: number
+  attribute: AttributeKey
+  streak: number
+  completedToday: boolean
+}
+
 export interface PlayerState {
   name: string
   level: number
   exp: number
   attributes: Record<AttributeKey, number>
   quests: Quest[]
+  habits: Habit[]
   streak: number
   isSample: boolean
   lastActive: string
@@ -38,5 +50,9 @@ export const starterState: PlayerState = {
     { id: 'main-foundation', title: 'Build Your Foundation', description: 'Complete 7 focused sessions this week.', kind: 'main', reward: 250, attribute: 'DISC', completed: false },
     { id: 'side-reading', title: 'Expand The Mind', description: 'Read 10 pages of a challenging book.', kind: 'side', reward: 30, attribute: 'WIS', completed: false },
     { id: 'side-connect', title: 'Send A Signal', description: 'Reach out to someone who matters.', kind: 'side', reward: 30, attribute: 'SOC', completed: false },
+  ],
+  habits: [
+    { id: 'habit-morning', title: 'Morning activation', cue: 'After I make coffee', routine: 'Two minutes of movement before the day begins.', reward: 20, attribute: 'END', streak: 3, completedToday: false },
+    { id: 'habit-review', title: 'Close the loop', cue: 'Before I sleep', routine: 'Write one line about what moved forward today.', reward: 15, attribute: 'WIS', streak: 6, completedToday: false },
   ],
 }
